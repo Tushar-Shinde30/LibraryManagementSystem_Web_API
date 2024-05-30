@@ -28,7 +28,6 @@ namespace LibraryManagementSystem.Controllers
             return database.GetContainer(ContainerName);
         }
 
-        #region Member Operations
 
         [HttpPost]
         public async Task<IActionResult> AddMember([FromBody] Member memberModel)
@@ -138,6 +137,5 @@ namespace LibraryManagementSystem.Controllers
             return Ok(memberModel);
         }
 
-        #endregion
     }
 }

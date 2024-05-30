@@ -1,13 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-    using LibraryManagementSystem.Entities;
-    using LibraryManagementSystem.Model;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Azure.Cosmos;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
+﻿
+using LibraryManagementSystem.Entities;
+using LibraryManagementSystem.Model;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Cosmos;
 
 namespace LibraryManagementSystem.Controllers
     

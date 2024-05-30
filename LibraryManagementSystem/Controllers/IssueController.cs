@@ -29,7 +29,6 @@ namespace LibraryManagementSystem.Controllers
             return database.GetContainer(ContainerName);
         }
 
-        #region Issue Operations
 
         [HttpPost]
         public async Task<IActionResult> IssueBook([FromBody] Issue issueModel)
@@ -158,6 +157,5 @@ namespace LibraryManagementSystem.Controllers
             return Ok(issueModels);
         }
 
-        #endregion
     }
 }
