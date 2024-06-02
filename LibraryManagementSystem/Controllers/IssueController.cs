@@ -62,9 +62,9 @@ namespace LibraryManagementSystem.Controllers
                 MemberId = issueModel.MemberId,
                 IssueDate = DateTime.Now,
                 IsReturned = false,
-                CreatedBy = "Admin",
+                CreatedBy = "Tushar",
                 CreatedOn = DateTime.Now,
-                UpdatedBy = "Admin",
+                UpdatedBy = "Tushar",
                 UpdatedOn = DateTime.Now,
                 Version = 1,
                 Active = true,
@@ -73,7 +73,7 @@ namespace LibraryManagementSystem.Controllers
 
             book.IsIssued = true;
             book.UpdatedOn = DateTime.Now;
-            book.UpdatedBy = "Admin";
+            book.UpdatedBy = "Tushar";
 
             await _container.ReplaceItemAsync(book, book.Id);
             await _container.CreateItemAsync(issue);
@@ -111,7 +111,7 @@ namespace LibraryManagementSystem.Controllers
 
             book.IsIssued = false;
             book.UpdatedOn = DateTime.Now;
-            book.UpdatedBy = "Admin";
+            book.UpdatedBy = "Tushar";
             await _container.ReplaceItemAsync(book, book.Id);
 
             return Ok(issueModel);
